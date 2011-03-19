@@ -12,7 +12,7 @@
                    em:maxVersion="3.6.*" />
   <RDF:Description RDF:about="urn:mozilla:install-manifest"
                    em:id="checkplaces@andyhalford.com"
-                   em:version="2.0.1"
+                   em:version="2.1.0"
                    em:type="2"
                    em:iconURL="chrome://checkplaces/skin/icon32.gif"
                    em:optionsURL="chrome://checkplaces/content/options.xul"
