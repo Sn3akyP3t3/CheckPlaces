@@ -40,7 +40,7 @@
 
 <dialog id="checkplacesOptions"
         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
-        title="&title; 2.4.1"
+        title="&title; 2.4.2"
         onload="CheckPlaces.onDialogLoad();"
         buttons="accept,cancel,extra2"
         buttonlabelaccept="&save;"

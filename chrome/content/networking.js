@@ -72,12 +72,17 @@ CheckPlacesNetworking.prototype = {
 	},
 
   //nsIStreamListener - called when request is started
-  onStartRequest: function(request, context) {
-  },
+  onStartRequest: function(request, context) { },
 
 	//Data has been returned - may be called many times
   onDataAvailable: function(request, context, stream, sourceOffset, length) {
 		this.startTime = 0;
+		
+		//You MUST read the data sent!
+		var sis = Components.classes["@mozilla.org/scriptableinputstream;1"]  
+												.createInstance(Components.interfaces.nsIScriptableInputStream);  
+		sis.init(stream);     
+		sis.read(length);
 	},
 
 	//Called when request has finished
@@ -113,7 +118,7 @@ CheckPlacesNetworking.prototype = {
   onProgress: function(request, context, progress, progressMax) { },
 
   //nsIHttpEventSink - not implementing will cause annoying exceptions
-  onRedirect : function(oldChannel, newChannel) {	},
+  onRedirect : function(oldChannel, newChannel) { },
 
   //If required suppress any certificate errors
   notifyCertProblem: function(socketInfo, status, targetSite) {

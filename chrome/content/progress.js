@@ -601,16 +601,19 @@ var CheckPlacesProgress = {
 		if (this.cancelled) return;
 		this.pageCount++;
 		try {
-			var cpn = new CheckPlacesNetworking(uri, (head ? "HEAD" : "GET"), child, this.callBack);
+			var method = head ? "HEAD" : "GET";
+			var cpn = new CheckPlacesNetworking(uri, method, child, this.callBack);
+			method = (uri.match(/^http/) ? " with " + method : "") + ": ";
+			
 			//If limiting concurrency then only start up to the limit - the rest can wait
 			if (this.concurrency && this.liveLinks && this.liveLinks.length) {
 				if (this.liveLinks.length < this.concurrency) {
-					if (this.debug) Components.utils.reportError("Checking link with " + (head ? "HEAD: " : "GET: ") + uri);
+					if (this.debug) Components.utils.reportError("Checking link" + method + uri);
 					cpn.init();
 				}
 			}
 			else {
-				if (this.debug) Components.utils.reportError("Checking link with " + (head ? "HEAD: " : "GET: ") + uri);
+				if (this.debug) Components.utils.reportError("Checking link" + method + uri);
 				cpn.init();
 			}
 			var link = {};
@@ -793,7 +796,11 @@ var CheckPlacesProgress = {
 					//This isn't thread safe, but the best I can do with javascript
 					var cpn = cpp.liveLinks[next].cpn;
 					var id = cpp.liveLinks[next].id;
-					if (cpp.debug) Components.utils.reportError("Checking link with " + (head ? "HEAD: " : "GET: ") + cpn.uri);
+					if (cpp.debug) {
+						var method = head ? "HEAD" : "GET";
+						method = (uri.match(/^http/) ? " with " + method : "") + ": ";
+						Components.utils.reportError("Checking link" + method + cpn.uri);					
+					}
 					try {
 						cpn.init();
 						startedNext = true;
