@@ -10,6 +10,7 @@ locale   checkplaces  en-GB  chrome/locale/en-GB/
 locale   checkplaces  da-DK  chrome/locale/da-DK/
 locale   checkplaces  de     chrome/locale/de/
 locale   checkplaces  fr     chrome/locale/fr/
+locale   checkplaces  hu     chrome/locale/hu/
 locale   checkplaces  ko-KR  chrome/locale/ko-KR/
 locale   checkplaces  pl     chrome/locale/pl/
 locale   checkplaces  pt-BR  chrome/locale/pt-BR/

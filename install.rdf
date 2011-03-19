@@ -5,7 +5,7 @@
 	<Description about="urn:mozilla:install-manifest">
     <em:id>checkplaces@andyhalford.com</em:id>
     <em:name>CheckPlaces</em:name>
-    <em:version>2.4.0</em:version>
+    <em:version>2.4.1</em:version>
 
     <em:type>2</em:type>
     <em:homepageURL>http://www.andyhalford.com/checkplaces/index.html</em:homepageURL>
@@ -24,6 +24,7 @@
     <em:translator>Christiansen (da-DK)</em:translator>
     <em:translator>shyangs (zh-TW)</em:translator>
     <em:translator>Wtspout (ko-KR)</em:translator>
+    <em:translator>Kozák Csaba (WonderCsabo) (hu)</em:translator>
 
 		<!-- Firefox -->
 		<em:targetApplication>

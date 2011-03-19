@@ -102,7 +102,8 @@ CheckPlacesNetworking.prototype = {
     this.channel = newChannel;
   },
   asyncOnChannelRedirect: function(oldChannel, newChannel, flags, callback) {
-    this.channel = newChannel;
+		this.onChannelRedirect(oldChannel, newChannel, flags);
+		callback.onRedirectVerifyCallback(0);
   },
 
 	//Status
