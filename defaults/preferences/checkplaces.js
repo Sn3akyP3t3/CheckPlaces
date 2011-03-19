@@ -14,6 +14,7 @@ pref("extensions.checkplaces.statusbaricon", true);
 pref("extensions.checkplaces.bookmarks_menu", true);
 pref("extensions.checkplaces.tools_menu", false);
 pref("extensions.checkplaces.org_menu", true);
+pref("extensions.checkplaces.manage_menu", true);
 pref("extensions.checkplaces.debug", false);
 pref("extensions.checkplaces.use_concurrency", true);
 pref("extensions.checkplaces.concurrency", "10");
