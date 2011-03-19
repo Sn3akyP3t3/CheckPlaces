@@ -14,7 +14,7 @@
  * The Original Code is the CheckPlaces extension.
  *
  * The Initial Developer of the Original Code is Andy Halford.
- * Portions created by the Initial Developer are Copyright (C) 2009-2010
+ * Portions created by the Initial Developer are Copyright (C) 2009-2011
  * the Initial Developer. All Rights Reserved.
  *
  * Contributor(s):
@@ -604,7 +604,7 @@ var CheckPlacesProgress = {
 			var method = head ? "HEAD" : "GET";
 			var cpn = new CheckPlacesNetworking(uri, method, child, this.callBack);
 			method = (uri.match(/^http/) ? " with " + method : "") + ": ";
-			
+
 			//If limiting concurrency then only start up to the limit - the rest can wait
 			if (this.concurrency && this.liveLinks && this.liveLinks.length) {
 				if (this.liveLinks.length < this.concurrency) {
@@ -731,7 +731,7 @@ var CheckPlacesProgress = {
 		try {
 			failedItem.tags = PlacesUtils.tagging.getTagsForURI(
 													Components.classes["@mozilla.org/network/io-service;1"]
-           													.getService(Ci.nsIIOService)
+           													.getService(Components.interfaces.nsIIOService)
            													.newURI(uri, null, null), {});
 		} catch(e) {
 		}
@@ -799,7 +799,7 @@ var CheckPlacesProgress = {
 					if (cpp.debug) {
 						var method = head ? "HEAD" : "GET";
 						method = (uri.match(/^http/) ? " with " + method : "") + ": ";
-						Components.utils.reportError("Checking link" + method + cpn.uri);					
+						Components.utils.reportError("Checking link" + method + cpn.uri);
 					}
 					try {
 						cpn.init();

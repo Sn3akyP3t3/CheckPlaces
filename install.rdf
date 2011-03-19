@@ -5,11 +5,12 @@
 	<Description about="urn:mozilla:install-manifest">
     <em:id>checkplaces@andyhalford.com</em:id>
     <em:name>CheckPlaces</em:name>
-    <em:version>2.4.2</em:version>
+    <em:version>2.4.3</em:version>
 
     <em:type>2</em:type>
     <em:homepageURL>http://www.andyhalford.com/checkplaces/index.html</em:homepageURL>
-    <em:iconURL>chrome://checkplaces/skin/icon64.gif</em:iconURL>
+    <em:iconURL>chrome://checkplaces/skin/icon48.png</em:iconURL>
+    <em:icon64URL>chrome://checkplaces/skin/icon64.png</em:icon64URL>
     <em:optionsURL>chrome://checkplaces/content/options.xul</em:optionsURL>
 
     <em:creator>Andy Halford</em:creator>
@@ -31,7 +32,7 @@
 			<Description>
 				<em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
 				<em:minVersion>3.0</em:minVersion>
-				<em:maxVersion>4.0b9pre</em:maxVersion>
+				<em:maxVersion>4.0.*</em:maxVersion>
 			</Description>
 		</em:targetApplication>
 

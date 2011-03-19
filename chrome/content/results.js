@@ -14,7 +14,7 @@
  * The Original Code is the CheckPlaces extension.
  *
  * The Initial Developer of the Original Code is Andy Halford.
- * Portions created by the Initial Developer are Copyright (C) 2009-2010
+ * Portions created by the Initial Developer are Copyright (C) 2009-2011
  * the Initial Developer. All Rights Reserved.
  *
  * Contributor(s):
@@ -1142,12 +1142,18 @@ var CheckPlacesResults = {
 						var id = CheckPlacesResults.deletedList[i].id;
 						var folder = CheckPlacesResults.deletedList[i].folder;
 						try {
-							if (folder)
-								PlacesUtils.bookmarks.removeFolder(id);
+							if (folder) {
+								try {
+									PlacesUtils.bookmarks.removeFolder(id);	//Obsolete in FF4.0
+								} catch(e) {
+									PlacesUtils.bookmarks.removeItem(id);
+								}
+							}
 							else
 								PlacesUtils.bookmarks.removeItem(id);
 						} catch (e) {
 							//Ignore error - user has probably deleted using Organiser
+							alert(e);
 						}
 					}
 				}

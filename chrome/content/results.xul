@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE dialog SYSTEM "chrome://checkplaces/locale/checkplaces.dtd">
 <?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
-<?xml-stylesheet href="chrome://checkplaces/skin/checkplaces.css" type="text/css"?>
+<?xml-stylesheet href="chrome://checkplaces-os/skin/checkplaces.css" type="text/css"?>
 
 
 <!-- ***** BEGIN LICENSE BLOCK *****
@@ -20,7 +20,7 @@
    - The Original Code is the CheckPlaces extension.
    -
    - The Initial Developer of the Original Code is Andy Halford.
-   - Portions created by the Initial Developer are Copyright (C) 2009-2010
+   - Portions created by the Initial Developer are Copyright (C) 2009-2011
    - the Initial Developer. All Rights Reserved.
    -
    - Contributor(s):

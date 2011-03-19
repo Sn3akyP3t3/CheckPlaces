@@ -14,7 +14,7 @@
  * The Original Code is the CheckPlaces extension.
  *
  * The Initial Developer of the Original Code is Andy Halford.
- * Portions created by the Initial Developer are Copyright (C) 2009-2010
+ * Portions created by the Initial Developer are Copyright (C) 2009-2011
  * the Initial Developer. All Rights Reserved.
  *
  * Contributor(s):
@@ -33,13 +33,9 @@
  *
  * ***** END LICENSE BLOCK ***** */
 
-/*toolbar buttons*/
+/*toolbar button*/
 #checkplaces-button {
-  list-style-image: url("chrome://checkplaces/skin/icon24.gif");
-}
-
-toolbar[iconsize="small"] #checkplaces-button {
-  list-style-image: url("chrome://checkplaces/skin/icon16.gif");
+  list-style-image: url("chrome://checkplaces/skin/icon24.png");
 }
 
 /*icon 16px*/
@@ -48,10 +44,10 @@ toolbar[iconsize="small"] #checkplaces-button {
 #checkplaces-tmenu, 	/*bookmarks menu*/
 #checkplaces-managemenu, /*SeaMonkey*/
 #checkplaces-orgmenu 	/*Library*/{
-  list-style-image: url("chrome://checkplaces/skin/icon16.gif");
+  list-style-image: url("chrome://checkplaces/skin/icon16.png");
 }
 
 .checkplacesLink {
-  list-style-image: url("chrome://checkplaces/skin/icon32.gif");
+  list-style-image: url("chrome://checkplaces/skin/icon32.png");
   margin-bottom: 3px;
 }
