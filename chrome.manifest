@@ -1,0 +1,13 @@
+content  checkplaces  jar:chrome/checkplaces.jar!/content/
+skin     checkplaces  classic/1.0  jar:chrome/checkplaces.jar!/skin/
+overlay  chrome://browser/content/browser.xul  chrome://checkplaces/content/checkplaces.xul
+overlay  chrome://browser/content/places/places.xul chrome://checkplaces/content/orgmenu.xul
+style    chrome://global/content/customizeToolbar.xul  chrome://checkplaces/skin/checkplaces.css
+locale   checkplaces  en-US  jar:chrome/checkplaces.jar!/locale/en-US/
+locale   checkplaces  en-GB  jar:chrome/checkplaces.jar!/locale/en-GB/
+locale   checkplaces  de-DE  jar:chrome/checkplaces.jar!/locale/de-DE/
+locale   checkplaces  fr     jar:chrome/checkplaces.jar!/locale/fr/
+locale   checkplaces  pl-PL  jar:chrome/checkplaces.jar!/locale/pl-PL/
+locale   checkplaces  pt-BR  jar:chrome/checkplaces.jar!/locale/pt-BR/
+locale   checkplaces  tr-TR  jar:chrome/checkplaces.jar!/locale/tr-TR/
+locale   checkplaces  zh-CN  jar:chrome/checkplaces.jar!/locale/zh-CN/

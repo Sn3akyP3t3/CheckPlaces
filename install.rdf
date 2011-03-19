@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<RDF:RDF xmlns:em="http://www.mozilla.org/2004/em-rdf#"
+         xmlns:NC="http://home.netscape.com/NC-rdf#"
+         xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <RDF:Description RDF:about="urn:mozilla:extension:file:checkplaces.jar"
+                   em:package="content/"
+                   em:skin="skin/">
+  </RDF:Description>
+  <RDF:Description RDF:about="rdf:#$2Lqmu1"
+                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+                   em:minVersion="3.0"
+                   em:maxVersion="3.6.*" />
+  <RDF:Description RDF:about="urn:mozilla:install-manifest"
+                   em:id="checkplaces@andyhalford.com"
+                   em:version="1.6.3"
+                   em:type="2"
+                   em:iconURL="chrome://checkplaces/skin/icon32.gif"
+                   em:name="CheckPlaces"
+                   em:creator="Andy Halford"
+                   em:homepageURL="http://www.andyhalford.com/checkplaces/index.html">
+    <em:translator>Jojaba (fr-FR)</em:translator>
+    <em:translator>Leszek (teo) Życzkowski (pl-PL)</em:translator>
+    <em:translator>Team erweiterungen.de (de-DE)</em:translator>
+    <em:translator>Wawuschel (de-DE)</em:translator>
+    <em:translator>57_homer (de-DE)</em:translator>
+    <em:translator>Edgard Dias Magalhaes (pt-BR)</em:translator>
+    <em:translator>yfdyh000 (zh-CN)</em:translator>
+    <em:translator>nikneyim (tr-TR)</em:translator>
+    <em:targetApplication RDF:resource="rdf:#$2Lqmu1"/>
+  </RDF:Description>
+</RDF:RDF>
