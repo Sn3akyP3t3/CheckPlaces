@@ -5,6 +5,7 @@ pref("extensions.checkplaces.exclude", false);
 pref("extensions.checkplaces.exclude_folder_ids", "");
 pref("extensions.checkplaces.check_links", true);
 pref("extensions.checkplaces.find_icons", true);
+pref("extensions.checkplaces.reload_icons", false);
 pref("extensions.checkplaces.use_timeout", true);
 pref("extensions.checkplaces.timeout", "30");
 pref("extensions.checkplaces.use_get", false);
