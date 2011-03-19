@@ -1,0 +1,191 @@
+--------------------------------------
+CHECKPLACES EXTENSION - CHANGE HISTORY
+--------------------------------------
+
+2.4.5 (10th March 2011)
+-----
+o Removed unnecessary alert when deleting
+
+2.4.4 (17th January 2011)
+-----
+o BUG FIX: Toolbar icon was displaying incorrectly
+
+2.4.3 (9th January 2011)
+-----
+o New icons
+o BUG FIX: Folders were not being deleted in Firefox 4.0
+o BUG FIX: List of tags was never populated in results
+
+2.4.2 (23rd December 2010)
+-----
+o BUG FIX: Fixed cause of some bookmarks hanging when being checked
+
+2.4.1 (6th December 2010)
+-----
+o BUG FIX: Firefox 4.0 performance bug fixed
+o Added Hungarian locale
+
+2.4.0 (1st December 2010)
+-----
+o Several internal changes for Firefox 4.0 compatibility
+
+2.3.0 (18th August 2010)
+-----
+o Can now export an XML file with the results in
+o Added option to update/overwrite existing favicons
+o Ignores all invalid security certificates or other SSL popups
+o Added Database check and compact messages to results window
+
+2.2.2 (13th July 2010)
+-----
+o Added support for Firefox 4.0
+
+2.2.1 (25th March 2010)
+-----
+o BUG FIX: Details were missing from 'Show excluded items' dialog
+
+2.2.0 (14th March 2010)
+-----
+o Expanded Duplicates check to include all types of location,
+  such as bookmarklets and searches
+o Expanded Empty Folders check to include folders that just contain
+  other empty folders
+o Displays more details for bookmarks
+o Added Korean locale
+
+2.1.0 (18th February 2010)
+-----
+o Added Places database check and compaction (vacuuming)
+o Improved the timeout system so less likely to 'hang' for long
+o Can now 'Check' from Add-ons dialog
+o Minor UI improvements
+
+2.0.1 (3rd February 2010)
+-----
+o Progress count didn't include livemarks, so a negative could be displayed
+o Fixed French locale issue
+o Updated other locales
+
+2.0.0 (12th January 2010)
+-----
+o Allows number of concurrent of pages checked to be limited
+o Reversed the meaning of the include/exclude options to ease understanding
+o Major change to the way duplicates are displayed in the results to make
+  it simpler to use and understand
+o In results the exclude list is now dynamically updated and you can now
+  include items again
+o In Options you can now view and individually include any excluded items
+o In results displays a list of items deleted that you can also restore
+o Added Danish and Chinese (zh-TW) locales
+o Many other minor changes to the results to simplify things and make it
+  easier to use
+
+1.6.6 (25th December 2009)
+-----
+o Restores more favicons
+o Timeout now more reliable
+
+1.6.4 (30th November 2009)
+-----
+o Catch more types of bad folder
+
+1.6.3 (18th November 2009)
+-----
+o Catch certain types of bad folders, and infinite recursion issue
+
+1.6.2 (11th November 2009)
+-----
+o Now catches bad dates and titles in bad bookmarks
+o Added Turkish locale
+o Updated for Firefox 3.6
+
+1.6.1 (14th October 2009)
+-----
+o Added Chinese, Polish, German, Brazillian, and French locales
+o Fixed colour issue in Vista by changing to drop down menu
+
+1.6.0 (13th September 2009)
+-----
+o You can now exclude individual pages and folders from future checks
+o Folders with just separators in are now considered as empty
+o You can elect to use GET in place of HEAD to reduce 'hanging'
+o Bookmarks that included 'Smart keywords' are now catered for
+
+1.5.2 (12th August 2009)
+-----
+o BUG FIX: Bad FTP bookmarks were not always being reported
+o Elapsed time now displays to nearest hundredth of a second
+o More space on the progress dialog for larger numbers of bookmarks
+
+1.5.1 (17th July 2009)
+-----
+o Added better exception handling and reporting
+
+1.5.0 (7th July 2009)
+-----
+o Cater for reorganisation of bookmarks by Xmarks
+o Instead of immediately deleting bookmarks, they are added to a 'trash'
+  list, which can be emptied or restored when you've finished.
+o When deleting a duplicate, and there is only one remaining, it is also
+  removed from the list to avoid confusion.
+o Buttons added to delete all but the most/least recent duplicate. An extra
+  option allows removal of the duplicates with the same date.
+o Reorganised Options dialog
+
+1.4.0 (24th June 2009)
+-----
+o Added display options to allow user to select where CheckPlaces appears:
+  Bookmarks Menu, Tools Menu, Bookmarks Organiser, and/or Status bar
+o BUG FIX: Since 1.3.2 invalid scheme's such as "htttp" were no
+  longer reported them as errors
+o BUG FIX: Deleting an item from the Organiser whilst results were being
+  displayed broke the results lists
+
+1.3.2 (22nd May 2009)
+-----
+o When checking pages exist it now ignores any URLs that do not begin
+  with http(s), file, or (s)ftp(s). So, for example, URLs starting with
+  'javascript' are no longer tested.
+
+1.3.1 (29th March 2009)
+-----
+o BUG FIX: If you deleted one or more bookmarks/folders the next item in
+  the list inherited the title and location of the last item deleted.
+
+1.3.0 (28th March 2009)
+-----
+o Timeout option to avoid waiting for very slow sites to respond
+o Added counts of items in each list as well as the elapsed time
+o Bookmark titles are now displayed in the lists in place of locations
+o You can now amend bookmark titles and locations directly
+o Added new list of cancelled items for when you cancel a check
+o BUG FIX: Home page was set to SyncPlaces in Addons dialog
+
+1.2.5 (11th March 2009)
+-----
+o Option to load 'favicon.ico' icons for those bookmarks without an icon
+o 'Wait' cursor displayed during initial check
+
+1.2.0 (10th March 2009)
+-----
+o Failed pages results now grouped into five different types for
+  easier handling
+o When select more than one result the details of the last result
+  are now displayed
+o When delete a result the next one in the list is automatically selected
+o When resize the results window, the list boxes now increase
+  in size to display more results
+o Added CheckPlaces icons
+o Added toolbar button and status bar icon as extra ways of starting up
+o BUG FIX: 'Delete all' buttons were not working
+
+1.1.0 (25th February 2009)
+-----
+o Initial public release
+o Check for duplicate bookmarks, empty folders, and bad bookmark links,
+  in addition to bad uris
+
+1.0.0 (August 2008)
+-----
+o Initial release for personal use only
+o Checks for bad uris only

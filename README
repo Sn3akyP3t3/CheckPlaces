@@ -1,0 +1,31 @@
+About:
+
+  CheckPlaces is a Firefox extension that allows you to check your bookmarks
+  in different ways. There is a basic check of your bookmarks, and optional
+  checks that the pages still exist, duplicate bookmarks, and empty folders.
+  You can also use it to restore favicons that have gone missing,
+  and compact and check the integrity of the Places database
+
+It was downloaded from:
+
+    http://www.andyhalford.com/checkplaces/
+
+Upstream Author:
+
+    Andy Halford <andy@andyhalford.com>
+
+Copyright:
+
+    <Copyright (C) 2008-2011 Andy Halford>
+
+License:
+
+    Covered by the Mozilla tri-license (MPL 1.1/GPL 2.0/LGPL 2.1).
+    See license.txt for detail.
+
+About this repo:
+
+    This is a fork by sss.
+    You can redistribute and/or modify this under the same terms with the upstream,
+    Mozilla tri-license (MPL 1.1/GPL 2.0/LGPL 2.1).
+
