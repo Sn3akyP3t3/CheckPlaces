@@ -12,13 +12,14 @@
                    em:maxVersion="3.6.*" />
   <RDF:Description RDF:about="urn:mozilla:install-manifest"
                    em:id="checkplaces@andyhalford.com"
-                   em:version="1.6.4"
+                   em:version="2.0.0"
                    em:type="2"
                    em:iconURL="chrome://checkplaces/skin/icon32.gif"
+                   em:optionsURL="chrome://checkplaces/content/options.xul"
                    em:name="CheckPlaces"
                    em:creator="Andy Halford"
                    em:homepageURL="http://www.andyhalford.com/checkplaces/index.html">
-    <em:translator>Jojaba (fr-FR)</em:translator>
+    <em:translator>Jojaba (fr)</em:translator>
     <em:translator>Leszek (teo) Życzkowski (pl-PL)</em:translator>
     <em:translator>Team erweiterungen.de (de-DE)</em:translator>
     <em:translator>Wawuschel (de-DE)</em:translator>
@@ -26,6 +27,8 @@
     <em:translator>Edgard Dias Magalhaes (pt-BR)</em:translator>
     <em:translator>yfdyh000 (zh-CN)</em:translator>
     <em:translator>nikneyim (tr-TR)</em:translator>
+    <em:translator>Christiansen (da-DK)</em:translator>
+    <em:translator>shyangs (zh-TW)</em:translator>
     <em:targetApplication RDF:resource="rdf:#$2Lqmu1"/>
   </RDF:Description>
 </RDF:RDF>
