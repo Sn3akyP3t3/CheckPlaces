@@ -5,16 +5,16 @@
 	<Description about="urn:mozilla:install-manifest">
     <em:id>checkplaces@andyhalford.com</em:id>
     <em:name>CheckPlaces</em:name>
-    <em:version>2.3.0</em:version>
+    <em:version>2.4.0</em:version>
 
     <em:type>2</em:type>
     <em:homepageURL>http://www.andyhalford.com/checkplaces/index.html</em:homepageURL>
-    <em:iconURL>chrome://checkplaces/skin/icon32.gif</em:iconURL>
+    <em:iconURL>chrome://checkplaces/skin/icon64.gif</em:iconURL>
     <em:optionsURL>chrome://checkplaces/content/options.xul</em:optionsURL>
 
     <em:creator>Andy Halford</em:creator>
     <em:translator>Jojaba (fr)</em:translator>
-    <em:translator>Leszek (teo) Życzkowski (pl-PL)</em:translator>
+    <em:translator>Leszek (teo) Życzkowski (pl)</em:translator>
     <em:translator>Team erweiterungen.de (de)</em:translator>
     <em:translator>Wawuschel (de)</em:translator>
     <em:translator>57_homer (de)</em:translator>
@@ -30,7 +30,7 @@
 			<Description>
 				<em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
 				<em:minVersion>3.0</em:minVersion>
-				<em:maxVersion>4.0b4pre</em:maxVersion>
+				<em:maxVersion>4.0b8pre</em:maxVersion>
 			</Description>
 		</em:targetApplication>
 
