@@ -5,7 +5,7 @@
 	<Description about="urn:mozilla:install-manifest">
     <em:id>checkplaces@andyhalford.com</em:id>
     <em:name>CheckPlaces</em:name>
-    <em:version>2.4.4</em:version>
+    <em:version>2.4.5</em:version>
 
     <em:type>2</em:type>
     <em:homepageURL>http://www.andyhalford.com/checkplaces/index.html</em:homepageURL>

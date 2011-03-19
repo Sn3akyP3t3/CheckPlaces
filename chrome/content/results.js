@@ -1141,19 +1141,28 @@ var CheckPlacesResults = {
 					for (var i=0; i<CheckPlacesResults.deletedList.length; i++) {
 						var id = CheckPlacesResults.deletedList[i].id;
 						var folder = CheckPlacesResults.deletedList[i].folder;
-						try {
-							if (folder) {
+						if (folder) {
+							try {
+								PlacesUtils.bookmarks.removeFolder(id);	//Obsolete in FF4.0
+							} catch(e) {
+								try {
+									PlacesUtils.bookmarks.removeItem(id);
+								} catch(e) {
+									//Ignore error - user has probably deleted using Organiser
+								}
+							}
+						}
+						else {
+							try {
+								PlacesUtils.bookmarks.removeItem(id);
+							} catch (e) {
+								//This should be nonsense, but it sometimes gets here pre FF4
 								try {
 									PlacesUtils.bookmarks.removeFolder(id);	//Obsolete in FF4.0
 								} catch(e) {
-									PlacesUtils.bookmarks.removeItem(id);
+									//Ignore error - user has probably deleted using Organiser
 								}
 							}
-							else
-								PlacesUtils.bookmarks.removeItem(id);
-						} catch (e) {
-							//Ignore error - user has probably deleted using Organiser
-							alert(e);
 						}
 					}
 				}
